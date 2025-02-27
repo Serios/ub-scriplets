@@ -396,20 +396,14 @@ function moveAttrProp(
 
 /// remove-d-paywal.js
 /// alias rdpw.js
-/// dependency run-at.fn
 /// world ISOLATED
-// example.com##+js(rdpw, [selector], attr2)
+// example.com##+js(rdpw, [selector])
 function removeDPayWall(
 	selector = ''
 ) {
-	const RemPaywall = ( ) => {
-          try {
 		  const log = console.log.bind(console);
 		log('Document tried to work');
 		  console.log('Hard working ');
-	  } catch { }
-    };
-    runAt(( ) => { RemPaywall(); }, 'interactive');
 }
 
 
