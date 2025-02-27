@@ -396,16 +396,25 @@ function moveAttrProp(
 
 /// remove-d-paywal.js
 /// alias rdpw.js
+/// dependency run-at.fn
 /// world ISOLATED
 // example.com##+js(rdpw, [selector])
 function removeDPayWall(
 	selector = ''
 ) {
-	const nodes = document.querySelectorAll(selector);
-	node.innerHTML = 'test me';
-		  const log = console.log.bind(console);
-		log('Document tried to work');
-		  console.log('Hard working ');
+    if ( selector === '' ) { return; }
+    const innerHTML = ( ) => {
+          const nodes = document.querySelectorAll(selector);
+	    const log = console.log.bind(console);
+          try {
+		 for ( const node of nodes ) {
+		      if ( node ) { node.innerHTML = 'test me'; }
+		 }
+		  log('Document tried to work');
+		 console.log('Hard working ');
+	  } catch { }
+    };
+    runAt(( ) => { innerHTML(); }, 'interactive');
 }
 
 
