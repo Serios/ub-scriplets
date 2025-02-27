@@ -406,7 +406,7 @@ function removeDPayWall(
     const innerHTML = ( ) => {
           try {
 		console.log('Hard working 1');
-		console.log(__next_f[1][9]);
+		console.log(self.__next_f[1][9]);
 		console.log('Hard working 2');
 	  } catch { }
     };
