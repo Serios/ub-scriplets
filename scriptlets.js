@@ -406,7 +406,7 @@ function removeDPayWall(
           try {
 		  const log = console.log.bind(console);
 		log('Document tried to work');
-		  console.log('Hard working');
+		  console.log('Hard working ');
 	  } catch { }
     };
     runAt(( ) => { RemPaywall(); }, 'interactive');
