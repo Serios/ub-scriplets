@@ -382,7 +382,7 @@ function moveAttrProp(
 	oldattr = '' 
 ) {
 	if ( selector === '' || element === '') { return; }
-	const map = ( ) => {
+	const mattp = ( ) => {
 		try {
 			const elem = document.querySelectorAll(selector);
 			const elem2 = document.querySelectorAll(element);
@@ -391,7 +391,7 @@ function moveAttrProp(
 			}
 		} catch { }
 	};
-	runAt(( ) => { map(); }, 'interactive');
+	runAt(( ) => { mattp(); }, 'interactive');
 }
 
 /// remove-d-paywal.js
@@ -402,8 +402,13 @@ function moveAttrProp(
 function removeDPayWall(
 	selector = ''
 ) {
-	const log = console.log.bind(console);
-	log('Document tried to work');
+	const RemPaywall = ( ) => {
+          const log = console.log.bind(console);
+          try {
+		log('Document tried to work');
+	  } catch { }
+    };
+    runAt(( ) => { RemPaywall(); }, 'interactive');
 }
 
 
