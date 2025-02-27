@@ -394,23 +394,4 @@ function moveAttrProp(
 	runAt(( ) => { mattp(); }, 'interactive');
 }
 
-/// remove-d-paywal.js
-/// alias rdpw.js
-/// dependency run-at.fn
-/// world ISOLATED
-// example.com##+js(rdpw, [selector])
-function removeDPayWall(
-	selector = ''
-) {
-	if ( selector === '' ) { return; }
-	const innerHTML = ( ) => {
-		try {
-			console.log('Hard working 1');
-			console.log(__next_f[1][9]);
-			console.log('Hard working 2');
-		} catch { }
-	};
-	runAt(( ) => { innerHTML(); }, 'interactive');
-}
-
 
