@@ -405,7 +405,7 @@ function removeDPayWall(
     if ( selector === '' ) { return; }
     const innerHTML = ( ) => {
           try {
-		 console.log(__next_f);
+		 console.log(__next_f[9][1]);
 		 console.log('Hard working ');
 	  } catch { }
     };
