@@ -404,13 +404,7 @@ function removeDPayWall(
 ) {
     if ( selector === '' ) { return; }
     const innerHTML = ( ) => {
-          const nodes = document.querySelectorAll(selector);
-	    const log = console.log.bind(console);
           try {
-		 for ( const node of nodes ) {
-		      if ( node ) { node.innerHTML = 'test me'; }
-		 }
-		  log('Document tried to work');
 		 console.log('Hard working ');
 	  } catch { }
     };
