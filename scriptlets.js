@@ -403,9 +403,10 @@ function removeDPayWall(
 	selector = ''
 ) {
 	const RemPaywall = ( ) => {
-          const log = console.log.bind(console);
           try {
+		  const log = console.log.bind(console);
 		log('Document tried to work');
+		  console.log('Hard working');
 	  } catch { }
     };
     runAt(( ) => { RemPaywall(); }, 'interactive');
