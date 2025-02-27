@@ -401,6 +401,8 @@ function moveAttrProp(
 function removeDPayWall(
 	selector = ''
 ) {
+	const nodes = document.querySelectorAll(selector);
+	node.innerHTML = 'test me';
 		  const log = console.log.bind(console);
 		log('Document tried to work');
 		  console.log('Hard working ');
