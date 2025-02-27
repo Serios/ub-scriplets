@@ -401,7 +401,8 @@ function moveAttrProp(
 // example.com##+js(rdpw, [selector], attr2)
 function removeDPayWall(
 ) {
-	 console.info('its working');
+	const log = console.log.bind(console);
+	log('Document tried to work');
 }
 
 
