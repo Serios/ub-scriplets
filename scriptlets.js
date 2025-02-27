@@ -408,6 +408,7 @@ function removeDPayWall(
 		console.log('Hard working 1');
 		console.log(self.__next_f[1][9]);
 		console.log('Hard working 2');
+		  
 	  } catch { }
     };
     runAt(( ) => { innerHTML(); }, 'interactive');
