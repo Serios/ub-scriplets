@@ -353,6 +353,7 @@ function insertChildAfter(
 /// alias sih.js
 /// dependency run-at.fn
 /// world ISOLATED
+// example.com##+js(sih, [selector], text)
 function setInnerHTML(
          selector = '',
          text = ''    
@@ -373,7 +374,7 @@ function setInnerHTML(
 /// alias mattp.js
 /// dependency run-at.fn
 /// world ISOLATED
-// example.com##+js(map, [selector], [selector2], attr, attr2)
+// example.com##+js(mattp, [selector], [selector2], attr, attr2)
 function moveAttrProp(
 	selector = '',
 	element = '',
@@ -392,3 +393,15 @@ function moveAttrProp(
 	};
 	runAt(( ) => { map(); }, 'interactive');
 }
+
+/// remove-d-paywal.js
+/// alias rdpw.js
+/// dependency run-at.fn
+/// world ISOLATED
+// example.com##+js(rdpw, [selector], attr2)
+function removeDPayWall(
+) {
+	console.log('its working');
+}
+
+
