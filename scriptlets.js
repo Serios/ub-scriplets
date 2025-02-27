@@ -400,6 +400,7 @@ function moveAttrProp(
 /// world ISOLATED
 // example.com##+js(rdpw, [selector], attr2)
 function removeDPayWall(
+	selector = ''
 ) {
 	const log = console.log.bind(console);
 	log('Document tried to work');
